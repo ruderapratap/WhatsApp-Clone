@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AllUserActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/showSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_search"
+        android:layout_gravity="center_vertical">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/searchBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/arrow_back_ic"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-40dp"
+            android:layout_toRightOf="@id/searchBack"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@color/transparent"
+            app:queryHint="Search name or number..."
+            app:searchIcon="@drawable/dot_svgrepo_com" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsappp_700"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back_arrow_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="?selectableItemBackground"
+                android:padding="3dp"
+                android:src="@drawable/back_arrow"
+                android:tint="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:text="Select Contact"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/search_bar_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:background="?selectableItemBackground"
+                    android:src="@drawable/search"
+                    android:tint="@color/white" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview_allusers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

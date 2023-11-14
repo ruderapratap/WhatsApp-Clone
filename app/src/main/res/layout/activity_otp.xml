@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="#EBE9E9"
+    tools:context=".Activity.OtpActivity">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:padding="10dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/whatsapp_icon"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_919520771020"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="22sp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:id="@+id/phonelbl"/>
+
+
+       <com.mukeshsolanki.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+           android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:itemBackground="@drawable/otp_background"
+        android:textAllCaps="true"
+           android:layout_gravity="center"
+        android:textColor="@color/grey"
+        app:OtpHideLineWhenFilled="true"
+        app:OtpItemCount="6"
+        app:OtpItemSpacing="6dp"
+        app:OtpState_filled="true"
+        />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="16sp"
+                app:cornerRadius="5dp"
+                android:textStyle="bold"
+                android:text="@string/continue1"
+                android:id="@+id/continueBtn"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>

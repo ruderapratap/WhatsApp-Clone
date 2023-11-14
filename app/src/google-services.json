@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "541293205778",
+    "firebase_url": "https://chat-whatsapp-1ead4-default-rtdb.firebaseio.com",
+    "project_id": "chat-whatsapp-1ead4",
+    "storage_bucket": "chat-whatsapp-1ead4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541293205778:android:c92eed0e267c16bd1efbcb",
+        "android_client_info": {
+          "package_name": "com.ruderarajput.chatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541293205778-1i1d0ils71o9bgmltai9lo05hlandnic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ruderarajput.chatsapp",
+            "certificate_hash": "3707b962d090efe59a1b63e175cfdc9df053b88a"
+          }
+        },
+        {
+          "client_id": "541293205778-7olh90qisldn06nnl0cjt0p0lp52idvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ruderarajput.chatsapp",
+            "certificate_hash": "c673b5ff886cc60a33fc6841fe4340633a089b11"
+          }
+        },
+        {
+          "client_id": "541293205778-04k9mhfb7d88nhtnns84l7pgfr2nfemv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMLwr8TA4YYL_M2zNmuJemw1CvoH_Mtd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541293205778-04k9mhfb7d88nhtnns84l7pgfr2nfemv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541293205778:android:06c5dc55e8a8e5ca1efbcb",
+        "android_client_info": {
+          "package_name": "com.ruderarajput.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541293205778-d4a4qo7t39ibdii2vqt9arispn8aj0en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ruderarajput.whatsapp",
+            "certificate_hash": "c673b5ff886cc60a33fc6841fe4340633a089b11"
+          }
+        },
+        {
+          "client_id": "541293205778-04k9mhfb7d88nhtnns84l7pgfr2nfemv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMLwr8TA4YYL_M2zNmuJemw1CvoH_Mtd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541293205778-04k9mhfb7d88nhtnns84l7pgfr2nfemv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

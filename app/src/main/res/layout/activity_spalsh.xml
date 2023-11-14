@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.SpalshActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/whatsapp_icon"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:text="from"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/heart"
+            android:tint="@color/whatsappp_500" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Rudera"
+            android:textColor="@color/whatsappp_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+

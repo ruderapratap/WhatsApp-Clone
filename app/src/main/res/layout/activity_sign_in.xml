@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="#EBE9E9">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/whatsapp_icon"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Mobile Number"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="text"
+                android:maxLength="13"
+                android:background="@drawable/otp_background"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtUsername"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:background="@drawable/otp_background"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/password"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:background="@drawable/otp_background"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtConfirmPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/confirm_password"
+            android:textColorHint="#A7A7A7"
+            app:boxStrokeColor="#EAEAEE"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textColor="#5B5B5B"
+                android:textSize="15sp"
+                android:background="@drawable/otp_background"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            app:cornerRadius="5dp"
+            android:textStyle="bold"
+            android:text="@string/continue2"
+            android:id="@+id/continueBtn2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

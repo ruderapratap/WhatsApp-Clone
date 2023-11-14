@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="#EBE9E9"
+    tools:context=".Activity.SetupProfileActivity">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_user_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/profile_icon"
+            android:padding="15dp"
+            android:elevation="5dp"
+            app:civ_border_color="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Image"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/phonelbl"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/please_set_your_name_and_optional_profile_image"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:layout_marginTop="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Type Your Name"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:textColorHint="#A7A7A7"
+        app:boxStrokeColor="#EAEAEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameBox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="text"
+            android:background="@drawable/otp_background"
+            android:textColor="#5B5B5B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="About"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:textColorHint="#A7A7A7"
+        app:boxStrokeColor="#EAEAEE">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/about_box"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="text"
+            android:background="@drawable/otp_background"
+            android:textColor="#5B5B5B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                app:cornerRadius="5dp"
+                android:textStyle="bold"
+                android:text="Setup Profile"
+                android:id="@+id/setup_profile_btn"/>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile_icon"
+        android:padding="7dp"
+        android:layout_marginStart="7dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginStart="4dp"
+        android:layout_toRightOf="@id/profile_image">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chating_user"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="#4A4747"
+            android:layout_marginEnd="60dp"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_toRightOf="@id/profile_image"
+            android:text="@string/tap_to_chat"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:textColor="#969393"
+            android:layout_marginEnd="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lastmsg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textSize="12sp"
+        android:textColor="#969393"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="13dp"/>
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

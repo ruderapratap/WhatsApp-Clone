@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative"
+    android:background="@drawable/selectable_message"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/imagevisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_sender">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/videoplayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp">
+
+            <!-- Existing Views -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/video_view_card"
+                android:visibility="gone"
+                android:layout_width="250dp"
+                android:layout_height="260dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="0dp"
+                android:layout_margin="1dp">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="10dp"
+                    android:visibility="gone" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/video_view_card2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="-262dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="7dp">
+
+                <ImageView
+                    android:id="@+id/videoThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/video_sent_time"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:textSize="10sp"
+                android:layout_marginTop="-25dp"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="7dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="?selectableItemBackground"
+                android:id="@+id/playButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img"
+                android:layout_gravity="center"
+                android:layout_marginTop="-165dp"
+                android:visibility="gone" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_view_card"
+            android:visibility="gone"
+            android:layout_width="220dp"
+            android:layout_height="280dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="0dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="7dp">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/img_1" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/image_sent_time"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:textSize="10sp"
+            android:layout_marginTop="-25dp"
+            android:textColor="@color/white"
+            android:gravity="end"
+            android:layout_marginEnd="18dp"
+            android:layout_gravity="bottom"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:maxWidth="310dp"
+        android:maxHeight="500dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.84090906" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/black2"
+            app:layout_constraintBottom_toTopOf="@id/timestamp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textMultiLine"
+            android:maxWidth="270dp"
+            android:minWidth="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_12_00_pm1"
+            android:textSize="10sp"
+            android:layout_marginBottom="3dp"
+            android:padding="2dp"
+            android:paddingEnd="22dp"
+            android:paddingStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/set_emoji"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_emoji"
+        android:layout_marginTop="-3dp"
+        android:visibility="gone"
+        android:src="@drawable/heart_emoji"
+        android:padding="2dp"
+        android:elevation="7dp"
+        android:layout_below="@id/imagevisible"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"/>
+
+
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

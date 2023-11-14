@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chating_background"
+    tools:context=".Activity.ChatDetailActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview_chating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cardview"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/selectable_message"
+        android:scrollbars="none" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="6dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/emoji"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="?selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/emoji"
+                android:tint="#6C6A6A" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="84dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/message"
+                android:maxHeight="250dp"
+                android:textColor="@color/black2"
+                android:textColorHint="#767575"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/camera_sent_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-45dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/camera"
+                android:tint="@color/grey" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/attechment"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-70dp"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/attachment"
+                android:tint="@color/grey" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/send_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_sendbtn"
+        android:padding="12dp"
+        android:src="@drawable/sendbtn_icon"
+        android:tint="@color/white" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsappp_700"
+        android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/back_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back_arrow_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:src="@drawable/back_arrow"
+                    android:tint="@color/white" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:padding="5dp"
+                    android:src="@drawable/profile_icon" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/back_linear"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="70dp"
+                    android:maxLines="1"
+                    android:text="@string/chating_user"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/last_seen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="70dp"
+                    android:maxLines="1"
+                    android:text="Online"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/back_linear" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menu_chating_screeen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+                android:src="@drawable/menu_chating_screen"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/audiocall_chat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:padding="7dp"
+                android:src="@drawable/call_ic_chating_screen"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/menu_chating_screeen"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/videocall_chating_screeen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="11dp"
+                android:padding="4dp"
+                android:src="@drawable/video_call_icon"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/audiocall_chat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

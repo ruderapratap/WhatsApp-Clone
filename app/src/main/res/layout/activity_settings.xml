@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsappp_700">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backarow_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/back_arrow"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/prfile_changing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_save_image"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/about_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:layout_marginTop="3dp"
+                        android:text="Hey there's I am using Whatsapp"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/key_icon"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Security notifications, change number "/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/messages"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chats"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/theme_wallpapers_chat_history"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/notification"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notifications"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/message_group_call_tones"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/data_usage"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Storage and data"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/network_usage_auto_download"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/question_mark"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/help1"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="@string/help_center_contacts_us_privacy_policy"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="?selectableItemBackground"
+                android:padding="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="45dp"
+                    android:padding="3dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/invitefriend_icon"
+                    android:tint="@color/grey"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invite_a_friend1"
+                        android:textSize="16sp"
+                        android:textColor="@color/black2"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/heart"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rudera"
+                android:textSize="16sp"
+                android:textColor="@color/black2"
+                android:textStyle="bold"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
